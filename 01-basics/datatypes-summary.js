@@ -30,9 +30,28 @@ let myObj = {
 // function 
 const myFunction = function myFunc() {
     console.log("Hello world ");
+ }
+
+// console.log(typeof myObj);
+// console.log(typeof bigNumber);
+// console.log(typeof heros);
+// console.log(typeof myFunction);
+
+// ************************************* Memory Allocation ***************************************************
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+let myName = "Tanishq"
+let secretName = myName
+
+secretName = "daniel"
+
+console.log(myName);
+console.log(secretName);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@hdfc"
 }
 
-console.log(typeof myObj);
-console.log(typeof bigNumber);
-console.log(typeof heros);
-console.log(typeof myFunction);
+let userTwo = userOne
