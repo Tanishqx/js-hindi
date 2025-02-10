@@ -4,7 +4,8 @@
 console.log(3+4)
 
 // code readibility should be high
-// Datatype in javascript
+// Datatypes in javascript
+
 // number => 2 to power 53
 // bigint 
 // string => ""
