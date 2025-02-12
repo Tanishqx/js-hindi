@@ -43,7 +43,40 @@ function loginUserMessage (username) {
     return `${username} is logged in.`;
 }
 
-console.log(loginUserMessage("Tanishq")); // Tanishq is logged in. 
+// console.log(loginUserMessage("Tanishq")); // Tanishq is logged in. 
 // console.log(loginUserMessage()); // undefined is logged in, because function is expecting a parameter 
 
+// function calculateCartPrice (...num1) { // rest parameter; to accept any number of arguments
+//     return num1 
+// } 
+// console.log(calculateCartPrice(100, 200, 300, 400)); // [100, 200, 300, 400]
 
+function calculateTotalPrice (val1, val2, ...num2) {
+    return num2 
+}
+
+// console.log(calculateTotalPrice(100, 200, 300, 400, 500)); // [300, 400, 500]
+
+const user = {
+    username: 'Tanishq',
+    id: 449,
+    rank: 'Gold'
+}
+
+function getUserDetails (user) {
+    console.log(`Username ${user.username} with ID ${user.id} has a rank of ${user.rank} `);   
+}
+// getUserDetails(user)
+getUserDetails({
+    username: 'Tanishq',
+    id: 449,
+    rank: 'Gold'
+}) 
+
+const myNewArray = [200, 300, 100, 400, 500];
+
+function returnSecondValue (getArray) {
+    return getArray[3]
+}
+
+console.log(returnSecondValue(myNewArray)); // 400
