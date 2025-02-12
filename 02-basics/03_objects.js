@@ -3,7 +3,7 @@
 
 const { is } = require("express/lib/request");
 
-// object literals
+// object literals method
 const mySym = Symbol('key1');
 
 const userOne = {
