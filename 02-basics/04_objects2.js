@@ -41,7 +41,31 @@ const users = [
 
 // console.log(users[0].name);
 // console.log(userTwo)
-console.log(Object.keys(userTwo)) // [ 'email', 'fullname', 'location' ]
-console.log(Object.values(userTwo)); // [ 'guy@google', { firstName: 'Guy', lastName: 'Doe' }, 'USA' ]
-console.log(Object.entries(userTwo)); // [ [ 'email', 'guy@google' ], [ 'fullname', { firstName: 'Guy', lastName: 'Doe' } ], [ 'location', 'USA' ] ]
+// console.log(Object.keys(userTwo)) // [ 'email', 'fullname', 'location' ]
+// console.log(Object.values(userTwo)); // [ 'guy@google', { firstName: 'Guy', lastName: 'Doe' }, 'USA' ]
+// console.log(Object.entries(userTwo)); // [ [ 'email', 'guy@google' ], [ 'fullname', { firstName: 'Guy', lastName: 'Doe' } ], [ 'location', 'USA' ] ]
 
+/****************** Destructuring of objects ************************* */
+
+const course = {
+    courseName: 'React',
+    duration: '2 months',
+    price: '$99',
+    location: 'India'
+}
+
+// course.courseName 
+
+const {courseName} = course // destructuring or simply extracting the value of courseName from course object
+
+console.log(courseName); 
+
+const {courseName: name, duration, price, location} = course; // renaming the courseName to name
+console.log(name, duration, price, location);
+
+// {
+//     "name": "React",
+//     "duration": "2 months",
+//     "price": "$99",
+//     "location": "India"
+// } // JSON format 
