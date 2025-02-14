@@ -33,4 +33,3 @@ const addThree = (num1, num2, num3) => (num1 + num2 + num3) // implicit return; 
 
 const addTwoNumbers = (num1, num2) => ({username: 'tanishq'}) 
 
-myNewArray.forEach(function ())
