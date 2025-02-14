@@ -31,7 +31,7 @@ if (true) {
 
 // *********************** interesting ***********************
 
-console.log(addOne(5)) // 6
+console.log(addOne(5)) // 6 
 function addOne (num) { // function declaration
     return num + 1
 }
