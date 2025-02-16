@@ -18,11 +18,13 @@ const myNums = [1, 2, 3, 4, 5, 6, 8, 9]
 // console.log(newNums)
 
 // const newNums = 
-const newNums = []
+// const newNums = []
 
-myNums.forEach ( (num) => {
-    if (num > 3){
-        newNums.push(num)
-    }
-})
-console.log(newNums)
+// myNums.forEach ( (num) => {
+//     if (num > 3){
+//         newNums.push(num)
+//     }
+// })
+// console.log(newNums)
+
+
